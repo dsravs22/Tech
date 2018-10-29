@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>DISPLAY PLANS</title>
+</head>
+<body>
+class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnect("root"," ");
+Statement st=con.createStatement();
+st=(select planname,monthlyrental,freecalls,freesms,callcharges,smscharges,datacharges,roamingcharges from planlist);
+st.executeQuery();
+</body>
+<html>
